@@ -13,9 +13,9 @@
 
 ## Files
 
-- `MOC2_9_4_carbon_assessment.pptx` — PowerPoint 16:9
-- `MOC2_9_4_carbon_assessment.pdf` — preview/export
+- `output/MOC2_9_4_carbon_assessment.pptx` — PowerPoint 16:9 ที่ build อัตโนมัติจาก source
 - `src/build_deck.js` — source สำหรับสร้าง PowerPoint ด้วย PptxGenJS
+- `.github/workflows/build.yml` — GitHub Actions สำหรับ rebuild deck เมื่อ source เปลี่ยน
 
 ## Main sources
 
