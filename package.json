@@ -1,0 +1,11 @@
+{
+  "name": "ppt-carbon",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "node src/build_deck.js"
+  },
+  "dependencies": {
+    "pptxgenjs": "^3.12.0"
+  }
+}
