@@ -1,0 +1,40 @@
+name: Build PowerPoint
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/**"
+      - "package.json"
+      - ".github/workflows/build.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - run: npm install
+
+      - name: Build PPTX
+        run: npm run build
+
+      - name: Commit generated deck
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add output/MOC2_9_4_carbon_assessment.pptx
+          if git diff --cached --quiet; then
+            echo "No generated changes."
+          else
+            git commit -m "build: generate MOC2 9.4 carbon assessment deck"
+            git push
+          fi
