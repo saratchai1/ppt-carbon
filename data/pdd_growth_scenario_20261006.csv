@@ -1,0 +1,5 @@
+Project/PDD,Type,Crediting years,Area rai,Baseline stock tCO2e,Old total tCO2e,New scenario total tCO2e,Scenario / old,Difference tCO2e,Note
+MOC2-VSD,Existing forest + small zero-stock area,10,6775.53,362962.8144,636899.82,244042.03,38.3%,-392857.79,Directly modeled from MOC2 baseline workbook
+MOC1-STC,Zero-stock planting + SOC note,15,554.32,0,86085.90,64744.58,75.2%,-21341.32,Keeps legacy SOC note unchanged; tree stock uses ramp
+MOC4 / group 1 PDD,Zero-stock planting,15,175.75,0,27293.98,18014.38,66.0%,-9279.61,PDD table implied about 10.35 tCO2e/rai/year
+MOC1-VSD,Legacy summary only,15,,0,169725.08,,n/a,,Area and SOC/tree split not confirmed
